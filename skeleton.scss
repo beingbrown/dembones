@@ -45,12 +45,19 @@ $font_family_1: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box; }
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-sizing: border-box;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
 .column,
 .columns {
   width: 100%;
